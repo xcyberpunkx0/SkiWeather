@@ -308,34 +308,29 @@ class _LocationScreen1 extends State<LocationScreen1> {
               ),
               //    ),
               Expanded(
-                flex: 2,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: <Widget>[
-                    Icon(
-                      weatherIcon,
-                      size: 200,
-                      color: Colors.white,
-                    ),
-                  ],
+                flex: 3,
+                child: Padding(
+                  padding: const EdgeInsets.only(bottom: 20),
+                  child: Icon(
+                    weatherIcon,
+                    size: 150,
+                    color: Colors.white,
+                  ),
                 ),
               ),
-              Expanded(
-                flex: 2,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Text(
-                      description,
-                      style: TextStyle(
-                        fontSize: 23,
-                        color: Colors.white, //Color(0xFFF8F8F8F),
-                        fontFamily: 'Comfortaa',
-                        fontWeight: FontWeight.bold,
-                      ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text(
+                    description,
+                    style: TextStyle(
+                      fontSize: 23,
+                      color: Colors.white, //Color(0xFFF8F8F8F),
+                      fontFamily: 'Comfortaa',
+                      fontWeight: FontWeight.bold,
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
               // SizedBox(
               //   // width: 25,

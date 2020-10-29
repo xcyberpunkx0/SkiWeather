@@ -1,3 +1,4 @@
+import 'package:Minimal_Weather/screens/locations_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:Minimal_Weather/screens/loading_screen.dart';
 
