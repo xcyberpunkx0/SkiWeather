@@ -4,6 +4,7 @@ import 'package:Minimal_Weather/utilities/constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:weather_icons/weather_icons.dart';
+import 'package:Minimal_Weather/utilities/apikey.dart';
 
 class WeatherModel {
   Future<dynamic> getCityWeather(String cityName) async {
