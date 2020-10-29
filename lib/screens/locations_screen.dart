@@ -4,7 +4,6 @@ import 'package:weather_icons/weather_icons.dart';
 import 'package:Minimal_Weather/services/weather.dart';
 import 'package:flutter/services.dart';
 import 'dart:async';
-import 'package:Minimal_Weather/utilities/gradients.dart';
 
 class LocationScreen1 extends StatefulWidget {
   LocationScreen1({this.locationweather});
@@ -16,7 +15,7 @@ class LocationScreen1 extends StatefulWidget {
 
 class _LocationScreen1 extends State<LocationScreen1> {
   WeatherModel weather = WeatherModel();
-  Gradients _gradients = Gradients();
+  // Gradients _gradients = Gradients();
 
   var _controller = TextEditingController();
 
@@ -31,8 +30,8 @@ class _LocationScreen1 extends State<LocationScreen1> {
   int offset;
   String time = '00:00';
   String description = '';
-  Color icongradient1;
-  Color icongradient2;
+  // Color icongradient1;
+  // Color icongradient2;
   String diff;
   var mindiff;
   IconData daynighticon;
@@ -76,8 +75,8 @@ class _LocationScreen1 extends State<LocationScreen1> {
       // var condition = 800;
       String timeofday = weatherData['weather'][0]['icon'];
       weatherIcon = weather.getWeatherIcon(condition, timeofday);
-      icongradient1 = _gradients.getGradient1(condition, timeofday);
-      icongradient2 = _gradients.getGradient2(condition, timeofday);
+      // icongradient1 = _gradients.getGradient1(condition, timeofday);
+      // icongradient2 = _gradients.getGradient2(condition, timeofday);
       humidity = weatherData['main']['humidity'];
       cityName = weatherData['name'];
       var windspeeed = weatherData['wind']['speed'];
@@ -208,13 +207,13 @@ class _LocationScreen1 extends State<LocationScreen1> {
             begin: Alignment.topRight,
             end: Alignment.bottomLeft, //00xfff282627
             //colors: [Colors.cyan, Color(0xFFFe721a2)]
-            colors: [Colors.blue, Colors.pink],
+            // colors: [Colors.blue, Colors.pink],
             // colors: [
             //   Colors.pink,
             //   Color(0xFFFE0ABF0),
             //   Color(0xFFF9D97F5),
             // ],
-            // colors: [Color(0xfff282627), Colors.black],
+            colors: [Color(0xfff282627), Colors.black],
           ),
         ),
         constraints: BoxConstraints.expand(),

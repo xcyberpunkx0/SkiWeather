@@ -40,8 +40,8 @@ class _LoadingScreenState extends State<LoadingScreen> {
               begin: Alignment.topRight,
               end: Alignment.bottomLeft, //00xfff282627
               //[Color(0xfff282627), Colors.black]
-              // colors: [Color(0xfff282627), Colors.black],
-              colors: [Color(0xFFFe721a2), Colors.cyan],
+              colors: [Color(0xfff282627), Colors.black],
+              // colors: [Color(0xFFFe721a2), Colors.cyan],
             ),
           ),
           constraints: BoxConstraints.expand(),
