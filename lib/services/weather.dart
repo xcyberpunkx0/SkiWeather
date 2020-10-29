@@ -4,6 +4,8 @@ import 'package:Minimal_Weather/utilities/constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:weather_icons/weather_icons.dart';
+import 'package:Minimal_Weather/utilities/apikey.dart';
+// Apikey dart consists of my apikey,you can grab one from any weather providers E.g OpenWeather :D
 
 class WeatherModel {
   Future<dynamic> getCityWeather(String cityName) async {
